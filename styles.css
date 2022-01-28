@@ -1,0 +1,257 @@
+.navbar{
+    background-color: #FD3A69;
+    height: 35rem;
+    width: 5rem;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: #FECD1A;
+    border-width: 4px;
+    position: fixed ;
+    opacity: 100%;
+    top: 4rem;
+    /* opacity: 50%; */
+}
+
+#code-icon{
+    position: relative;
+    top: 4rem;
+    height: 7rem;
+    display: block;
+}
+
+
+#code-card, #game-card, #anime-card{
+    height: 25rem;
+    position: relative;
+    background-color:black;
+    border-radius: 30%;
+    top: 10rem;
+    width: 15rem;
+    left: 10rem;
+    opacity: 100%;
+    display: inline-block;
+    transition: background-color 1s, color 1s;
+    margin: 3rem;
+}
+
+
+.card-title{
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    color:greenyellow;
+    transition: color 1s;
+    top: 3rem;
+}
+
+#code-card:hover, #game-card:hover, #anime-card:hover{
+    background-color: whitesmoke;
+    opacity: 90%;
+}
+
+
+.nav-hobby{
+    position: relative;
+    top: 2rem;
+    border-radius: 20%;
+    transition: background-color 1s,color 1s;
+}
+.nav-hobby:hover{
+    background-color: #FECD1A;
+    border-radius: 20%;
+    color: #EEEEEE;
+}
+
+.contact{
+    font-family: 'Comic Neue', cursive;
+    color: greenyellow;
+    display: inline;
+    margin-left: 5rem ;
+    margin-right: 5rem;
+}
+
+.nav-home:hover{
+    background-color: #FECD1A;
+    border-radius: 20%;
+    color: #EEEEEE;
+}
+
+.nav-home{
+    border-radius: 20%;
+    transition: background-color 1s,color 1s;
+}
+
+.nav-skill:hover{
+    background-color: #FECD1A;
+    border-radius: 20%;
+    color: #EEEEEE;
+}
+
+.nav-skill{
+    position: relative;
+    top: 4rem;
+    border-radius: 20%;
+    transition: background-color 1s,color 1s;
+}
+
+.nav-content{
+    position: relative;
+    top: 5rem;
+}
+
+.nav-me{
+    color: #05DFD7;
+    transition: background-color 1s,color 1s;
+    border-radius: 15%;
+}
+
+.nav-me:hover{
+    background-color: #05DFD7;
+    color: white
+}
+
+.my-image{
+    height: 3rem;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+    width: 3rem;
+    background-color: whitesmoke;
+}
+
+body{
+    margin: 0;
+    top: 0px;
+    background-image: url("back.jpg");
+    opacity: 90%;
+}
+
+.short-desc{
+    font-family: 'Comic Neue', cursive;
+    color: #F1FA3C;
+}
+
+.about{
+    font-family: 'Comic Neue', cursive;
+    color: #06FF00;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    padding-left: 10px;
+}
+
+button{
+    height: 3rem;
+    width: 10rem;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    background-color: #FF0075;
+    opacity: 100%;
+    border-style: none;
+    font-family: cursive;
+    color: white ;
+    transition: background-color 0.5s, color 1s;
+}
+
+button:hover{
+    background-color: #FFF5B7;
+    color: black;
+}
+
+#skill-card{
+    height: 30rem;
+    position: relative;
+    background-color:black;
+    border-radius: 30%;
+    top: 7rem;
+    width: 15rem;
+    left: 10rem;
+    opacity: 100%;
+    display: inline-block;
+    transition: opacity 1s, background-color 1s;
+    margin: 1rem;
+}
+
+.skill-desc{
+    color: #FF0075;
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    top: 3rem;
+}
+
+#skill-card:hover{
+    opacity: 90%;
+    background-color: whitesmoke;
+}
+
+.hobby{
+    height: 50rem;
+    background-color: #EC255A;
+    margin-left: 5rem;
+}
+
+.hob-head{
+    color: #FAEDF0;
+    font-family: cursive;
+    font-size: 4rem;
+    position: relative;
+    top: 7rem;
+}
+
+.skill-head{
+    color: #FAEDF0;
+    font-family: cursive;
+    font-size: 4rem;
+    position: relative;
+    top: 5rem;
+}
+
+.skill{
+    height: 90rem;
+    background-color: #892CDC;
+    margin-left: 5rem;
+}
+
+
+.row-cell{
+    margin: 5rem;
+    display: inline;
+    position: relative;
+    bottom: 7rem;
+}
+
+.about-cell{
+    width: 50rem;
+    display: inline-block;
+    opacity: 80%;
+    background-color: black;
+    border-radius: 2%;
+}
+
+.row{
+    display: inline-block;
+    margin: 2rem;
+    top: 5rem;
+    position: relative;
+}
+
+.title{
+    position: relative;
+    top: 2rem;
+    color: #FECD1A;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.profile-pic{
+    height: 20rem;
+    border-radius: 100%;
+}
+
+.home{
+    background-color: #7579E7;
+    height: 50rem;
+    z-index: -1;
+    margin: 0;
+    margin-left: 5rem;
+    position: relative;
+    /* bottom: 5rem; */
+}

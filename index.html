@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5dce274507.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+    <script>
+
+        function highlight(id)
+        {
+            document.getElementById(id).style.backgroundColor = "#FECD1A";
+            document.getElementById(id).style.color = "white";
+
+        }
+
+        function rollback(id)
+        {
+            document.getElementById(id).style.backgroundColor = "#EC255A";
+            document.getElementById(id).style.color = "#FECD1A";  
+        }
+    </script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="title">
+            <center>
+                <a href="">
+                <div class="nav-me">
+                    <img src="hacker.gif" class="my-image" alt="">
+                    <strong>
+                        SUMIT
+                    </strong>
+                </div>
+                </a>
+                <div class="nav-content ">
+                <a onclick="document.getElementById('hme').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+                <div class="nav-home" id="nav1">
+                    <img src="home.png" class="my-image" style="opacity: 100%;" alt="">
+                    Home
+                </div>
+                </a>
+                <a   onclick="document.getElementById('hob').scrollIntoView({ behavior: 'smooth', block: 'center' }); hobby_trans();"  >
+                <div class="nav-hobby" id="nav2">
+                    <img src="hobby.png" class="my-image" alt="">
+                    Hobby
+                </div>
+                </a>
+                <a  onclick="document.getElementById('ski').scrollIntoView({ behavior: 'smooth', block: 'center' });" >
+                <div class="nav-skill" id="nav3">
+                    <img src="skill.png" class="my-image" alt="">
+                    Skills
+                </div>
+                </a>
+            </div>
+
+            </center>
+        </div>
+    </div>
+
+
+    <!-- home section begins here -->
+
+    <section class="home" id="hme" onmouseenter="highlight('nav1');" onmouseleave="rollback('nav1');" >
+        <div class="row">
+        <div class="about-cell">
+            <div class="about">
+                <center>
+                An enthusiastic and curious Computer geek
+                </center>
+            </div>
+            <div class="short-desc">
+                <p>
+                <center>
+                    Hi, I am Sumit Kumar, a Computer Engineering undergrad at Netaji Subhash University of Technology, New Delhi, India.
+                    Currently I am in second year, and will be graduating in 2024. I really like to learn about the Technologies which 
+                    bring into existence the everyday digital tools we use and I am keenly interested in contributing to projects.
+                    This is my personal website describing about my hobbies and skills, and it is built using plain html, css and javascript.
+            </center>    
+            </p>            
+            </div>
+            <center>
+            <button onclick="document.getElementById('hob').scrollIntoView({ behavior: 'smooth', block: 'center' }); hobby_trans();">My Hobbies</button>
+            <button onclick="document.getElementById('ski').scrollIntoView({ behavior: 'smooth', block: 'center' });">My Skills</button>
+            <br>
+            <a href="https://www.linkedin.com/in/sumit-kumar-4bb216218/" class="contact"> Linked in  </a>
+            <a href="https://github.com/Kamui-Shurikens" class="contact">Git hub</a>   
+        </center>
+        </div>
+        <div class="row-cell" >
+            <img src="me.jpeg" class = "profile-pic" alt="">
+        </div>
+    </div>
+    </section>
+
+    <section class="hobby" id="hob" onmouseenter="highlight('nav2');" onmouseleave="rollback('nav2');" >
+        <center>
+        <div class="hob-head">
+            My-Hobbies
+        </div>
+        </center>
+        <div id="code-card" onmouseover="function(){document.getElementById('code-card').style.opacity = '100%'}">
+            <center>
+            <img src="code.png" id="code-icon"/>
+            <h2 class="card-title" >CODING</h2>
+            <strong>
+                <p class="skill-desc">As I am a Computer science student, hence coding is an essential part of my life and ofcourse its my hobby.</p>
+            </strong>
+            </center>
+        </div>
+        <div id="game-card" onmouseover="function(){document.getElementById('game-card').style.opacity = '100%'}">
+            <center>
+            <img src="game-controller.png" id="code-icon"/>
+            <h2 class="card-title" >GAMING</h2>
+            <strong>
+                <p class="skill-desc">I love to play computer games like Rocket league, Valorant and GTA 5. I play some mobile games also like COD Moblie.</p>
+            </strong>
+            </center>
+        </div>
+        <div id="anime-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}">
+            <center>
+            <img src="avatar.png" id="code-icon"/>
+            <h2 class="card-title" >ANIME</h2>
+            <strong>
+                <p class="skill-desc">I watch a lot of anime like Naruto,Demon slayer and Attack on titan(my favourite). I sometimes also read manga.</p>
+            </strong>
+            </center>
+        </div>
+    </section>
+
+    <section class="skill" id="ski" onmouseenter="highlight('nav3');" onmouseleave="rollback('nav3');">
+        <center>
+            <div class="skill-head">
+                My-Skills
+            </div>
+        </center>
+        <div>
+        <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'} " class="s1">
+            <center>
+            <img src="cpp.png" id="code-icon"/>
+            <h2 class="card-title" >C++</h2>
+            <strong>
+            <p class="skill-desc">I know all the basics of c++ and some basics of OPPs till operator overloading and some common STL classes.</p>
+            </strong>
+        </center>
+        </div>
+        <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}" id="s2">
+            <center>
+            <img src="html.png" id="code-icon"/>
+            <h2 class="card-title" >HTML</h2>
+            <strong>
+                <p class="skill-desc">I can use html to build a simple website like this quiet easily, though I need a little bit of googling but yes, I have understood almost all concepts required to structure a website.</p>
+            </strong>
+            </center>
+        </div>
+        <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}" id="s3">
+            <center>
+            <img src="css.png" id="code-icon"/>
+            <h2 class="card-title" >CSS</h2>
+            <strong>
+                <p class="skill-desc">I know all the basic concepts like postioning properties, z-index, transitions to design a website that may look cool.</p>
+            </strong>
+            </center>
+        </div>
+        <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}" id="s4">
+            <center>
+            <img src="javascript.png" id="code-icon"/>
+            <h2 class="card-title" >JAVASCRIPT</h2>
+            <strong>
+                <p class="skill-desc">I have learnt javascript enough to make a professional website as dynamic as required, and I aim to learn more of it that is enough to build a game. </p>
+            </strong>
+            </center>
+        </div>
+
+    </div>
+    <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}" id="s5">
+        <center>
+        <img src="bootstrap.png" id="code-icon"/>
+        <h2 class="card-title" >BOOTSTRAP</h2>
+        <strong>
+            <p class="skill-desc"> I know how to use various classes and features of the bootstrap liberary to make website more responsive to different viewports. Although, I didn't used it here according to rules 🙂. </p>
+        </strong>
+        </center>
+    </div>
+
+    <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}" id="s6" >
+        <center>
+        <img src="atom.png" id="code-icon"/>
+        <h2 class="card-title" >REACT JS</h2>
+        <strong>
+            <p class="skill-desc"> I just started out with this, don't know much, but ofcourse I aim to master it. </p>
+        </strong>
+        </center>
+    </div>
+
+    <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}" id="s7">
+        <center>
+        <img src="ubuntu.png" id="code-icon"/>
+        <h2 class="card-title" >BASH SHELL</h2>
+        <strong>
+            <p class="skill-desc"> I know basics of using a bash shell. (I use ubuntu by the way.) and I also know automating some basic tasks using bash shell. </p>
+        </strong>
+        </center>
+    </div>
+
+    <div id="skill-card" onmouseover="function(){document.getElementById('anime-card').style.opacity = '100%'}" id="s8">
+        <center>
+        <img src="certificate.png" id="code-icon"/>
+        <h2 class="card-title" >DATA STRUCTURES</h2>
+        <strong>
+            <p class="skill-desc"> I have studied out basic data structures and I have also completed a course in it. </p>
+            <a href="https://ninjasfiles.s3.amazonaws.com/certificate1777678d8adfd107141b2e3d77f88049f21df08.pdf" class="skill-desc" style="color: red;"> Link to certificate </a>
+        </strong>
+        </center>
+    </div>
+
+    </section>
+
+
+    <a href="https://icons8.com/icon/19293/code">Code icon by Icons8</a>
+    <a href="https://www.flaticon.com/free-icons/gaming" title="gaming icons">Gaming icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/c-" title="c++ icons">C++ icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Smashicons - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/ubuntu" title="ubuntu icons">Ubuntu icons created by Freepik - Flaticon</a>
+</body>
+</html>
